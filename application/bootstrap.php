@@ -82,7 +82,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  expose      set the X-Powered-By header                        FALSE
  */
 Kohana::init(array(
-	'base_url'   => '/kohana',
+	'base_url'   => '/vexen',
 	'index_file' => FALSE,
 ));
 
@@ -103,21 +103,14 @@ Kohana::modules(array(
 	// 'auth'       => MODPATH.'auth',       // Basic authentication
 	// 'cache'      => MODPATH.'cache',      // Caching with multiple backends
 	// 'codebench'  => MODPATH.'codebench',  // Benchmarking tool
-	 'database'   => MODPATH.'database',   // Database access
+	 'database'     => MODPATH.'database',   // Database access
 	// 'image'      => MODPATH.'image',      // Image manipulation
-	 'orm'        => MODPATH.'orm',        // Object Relationship Mapping
+	 'orm'          => MODPATH.'orm',        // Object Relationship Mapping
 	// 'unittest'   => MODPATH.'unittest',   // Unit testing
 	// 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
 
 	 'notices'   => MODPATH.'notices',  // Notices module
 	 'kostache'  => MODPATH.'kostache',  // Kostache module (Kohana+Mustache)
-	));
-
-// Special month/year route for workdays
-Route::set('month_year', 'workdays/<action>(/<month>)(/<year>)')
-	->defaults(array(
-		'controller' => 'workdays',
-		'action'     => 'edit',
 	));
 
 /**
