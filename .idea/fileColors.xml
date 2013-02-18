@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SharedFileColors">
+    <fileColor scope="JS" color="c6cc9e" />
+    <fileColor scope="JSON Models" color="adb4ff" />
+    <fileColor scope="Bootstrap" color="cbe0cd" />
+    <fileColor scope="Abstract" color="a2d6c2" />
+    <fileColor scope="Repositories" color="ff75ff" />
+    <fileColor scope="Contexts" color="cb85ff" />
+    <fileColor scope="Models" color="f0bbff" />
+    <fileColor scope="Specs" color="bcb197" />
+    <fileColor scope="API Controllers" color="dcf0ff" />
+    <fileColor scope="Controllers" color="92f595" />
+    <fileColor scope="Config" color="c6c6c6" />
+    <fileColor scope="View Classes" color="f6e0ca" />
+    <fileColor scope="Templates" color="ffff00" />
+    <fileColor scope="Views" color="ffffe4" />
+  </component>
+</project>
+

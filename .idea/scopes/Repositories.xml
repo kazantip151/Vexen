@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Repositories" pattern="file:*/classes/repository//*" />
+</component>

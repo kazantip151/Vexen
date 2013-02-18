@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Contexts" pattern="file:*/classes/context//*" />
+</component>

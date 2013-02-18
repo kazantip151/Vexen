@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Models" pattern="file:*/classes/model//*.php" />
+</component>
