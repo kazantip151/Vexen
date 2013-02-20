@@ -47,15 +47,15 @@ class View_Layout extends Kostache_Layout {
 	 * call parent::routes() and add their own to it.
 	 *
 	 * @return array
-//	 */
-//	public function routes()
-//	{
-//		return array(
-//			'user_form'  => Route::url('default', array('controller' => 'user', 'action' => 'form')),
+	 */
+	public function routes()
+	{
+		return array(
+			'welcome_index'  => Route::url('default', array('controller' => 'welcome', 'action' => 'index')),
 //			'user_index' => Route::url('default', array('controller' => 'user')),
 //			'user_job'   => Route::url('default', array('controller' => 'jobs', 'action' => 'index')),
 //			'job_form'   => Route::url('default', array('controller' => 'jobs', 'action' => 'form')),
-//		);
-//	}
+		);
+	}
 
 } // End View_Layout
