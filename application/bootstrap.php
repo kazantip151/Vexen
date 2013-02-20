@@ -98,9 +98,16 @@ Kohana::$config->attach(new Config_File);
 
 /**
  * Enable modules. Modules are referenced by a relative or absolute path.
+ *
+ * Example for email:
+ * $email = Email::factory('Hello, World', 'This is my body, it is nice.')->to('person@example.com')->from('you@example.com', 'My Name')->send();
+ *
+ * Adding html to email :$email->message('<p>This is <em>my</em> body, it is <strong>nice</strong>.</p>', 'text/html');
+ *
  */
 Kohana::modules(array(
 	// 'auth'       => MODPATH.'auth',       // Basic authentication
+	 'email'        => MODPATH.'email',       // Email module
 	// 'cache'      => MODPATH.'cache',      // Caching with multiple backends
 	// 'codebench'  => MODPATH.'codebench',  // Benchmarking tool
 	 'database'     => MODPATH.'database',   // Database access
