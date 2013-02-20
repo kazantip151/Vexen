@@ -7,40 +7,40 @@ class View_Layout extends Kostache_Layout {
 	{
 		return View::factory('profiler/stats')->render();
 	}
-//
-//	protected $_partials = array(
-//		'notices' => '_elements/notices',
-//	);
+
+	protected $_partials = array(
+		'notices' => '_elements/notices',
+	);
 
 	public function base_url()
 	{
 		return Kohana::$base_url;
 	}
 
-//	/**
-//	 * Collects all notices
-//	 *
-//	 * @uses   Notices
-//	 * @return array
-//	 */
-//	public function notices()
-//	{
-//		$data = array();
-//
-//		foreach (Notices::get() as $types)
-//		{
-//			foreach ($types as $array)
-//			{
-//				$data[] = array
-//				(
-//					'type'    => $array['type'],
-//					'message' => __($array['key'], $array['values']),
-//				);
-//			}
-//		}
-//
-//		return $data;
-//	}
+	/**
+	 * Collects all notices
+	 *
+	 * @uses   Notices
+	 * @return array
+	 */
+	public function notices()
+	{
+		$data = array();
+
+		foreach (Notices::get() as $types)
+		{
+			foreach ($types as $array)
+			{
+				$data[] = array
+				(
+					'type'    => $array['type'],
+					'message' => __($array['key'], $array['values']),
+				);
+			}
+		}
+
+		return $data;
+	}
 
 	/**
 	 * Var method to return an array of routes. Subviews should extend this,
@@ -48,14 +48,14 @@ class View_Layout extends Kostache_Layout {
 	 *
 	 * @return array
 	 */
-	public function routes()
-	{
-		return array(
-			'welcome_index'  => Route::url('default', array('controller' => 'welcome', 'action' => 'index')),
-//			'user_index' => Route::url('default', array('controller' => 'user')),
-//			'user_job'   => Route::url('default', array('controller' => 'jobs', 'action' => 'index')),
-//			'job_form'   => Route::url('default', array('controller' => 'jobs', 'action' => 'form')),
-		);
-	}
+//	public function routes()
+//	{
+//		return array(
+//			'welcome_index'  => Route::url('default', array('controller' => 'welcome', 'action' => 'index')),
+////			'user_index' => Route::url('default', array('controller' => 'user')),
+////			'user_job'   => Route::url('default', array('controller' => 'jobs', 'action' => 'index')),
+////			'job_form'   => Route::url('default', array('controller' => 'jobs', 'action' => 'form')),
+//		);
+//	}
 
 } // End View_Layout

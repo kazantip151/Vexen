@@ -17,7 +17,7 @@ class Controller_Site extends Controller {
 		parent::before();
 
 		// Initialize notices
-//		PHP_SAPI === 'cli' OR Notices::init();
+		PHP_SAPI === 'cli' OR Notices::init();
 
 		// Automatically load view and assets
 		$directory = Request::current()->directory() ? Request::current()->directory().'_' : '';
