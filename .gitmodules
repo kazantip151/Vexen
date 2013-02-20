@@ -22,3 +22,6 @@
 [submodule "modules/image"]
 	path = modules/image
 	url = git@github.com:kohana/image.git
+[submodule "modules/cache"]
+	path = modules/cache
+	url = git@github.com:kohana/cache.git
