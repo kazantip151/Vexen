@@ -10,6 +10,8 @@ class View_Layout extends Kostache_Layout {
 
 	protected $_partials = array(
 		'notices' => '_elements/notices',
+		'header'  => '_elements/header',
+		'footer'  => '_elements/footer',
 	);
 
 	public function base_url()
