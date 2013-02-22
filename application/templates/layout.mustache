@@ -4,20 +4,16 @@
     <meta charset="utf-8" />
     <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-    <!--<link rel="stylesheet" type="text/css" href="{{base_url}}media/css/reset.css" />-->
-    <!--<link rel="stylesheet" type="text/css" href="{{base_url}}media/css/formalize.css" />-->
+    <link rel="stylesheet" type="text/css" href="{{base_url}}media/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="{{base_url}}media/css/formalize.css" />
     <link rel="stylesheet" type="text/css" href="{{base_url}}media/css/notices.css" />
     <link href="{{base_url}}media/css/style.css" rel="stylesheet" type="text/css" />
     <title>{{title}}</title>
 </head>
 <body>
 <div id="wrapper">
-    <div id="header">
-        <h1>New vexen project</h1>
-    </div>
-    <div id="content">
+{{>header}}
 		{{>content}}
-    </div>
 	{{#show_profiler}}
         <div id="profiler">
             <hr />
@@ -25,5 +21,6 @@
         </div>
 	{{/show_profiler}}
 </div>
+{{>footer}}
 </body>
 </html>
