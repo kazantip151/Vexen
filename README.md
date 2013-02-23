@@ -1,1 +1,0 @@
-# New Kohana project named Vexen

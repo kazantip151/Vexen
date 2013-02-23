@@ -106,7 +106,7 @@ Kohana::$config->attach(new Config_File);
  *
  */
 Kohana::modules(array(
-	// 'auth'       => MODPATH.'auth',       // Basic authentication
+	 'auth'         => MODPATH.'auth',       // Basic authentication
 	 'email'        => MODPATH.'email',       // Email module
 	// 'cache'      => MODPATH.'cache',      // Caching with multiple backends
 	// 'codebench'  => MODPATH.'codebench',  // Benchmarking tool
@@ -130,4 +130,4 @@ Route::set('default', '(<controller>(/<action>(/<id>)))')
 		'action'     => 'index',
 	));
 
-Cookie::$salt = 'askhdlkans89789ymnas';
+Cookie::$salt = 'd518368b78893bcd473a14595b9495fb';

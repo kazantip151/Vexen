@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Model_User extends Model {
+class Model_User extends ORM {
 
 	/**
 	 * Show all users from database
@@ -23,7 +23,7 @@ class Model_User extends Model {
 	 */
 	public static function insert_user($values)
 	{
-		$db = DB::insert('users', array('name', 'course', 'email', 'website', 'phone', 'age'))
+		$db = DB::insert('users', array('user_name', 'password', 'token', 'created'))
 			->values($values)
 			->execute();
 		list($id, $row_change) = $db;
@@ -38,7 +38,7 @@ class Model_User extends Model {
 	 */
 	public static function get_user_param($id)
 	{
-		$query = DB::select('name', 'course', 'email', 'website', 'phone', 'age')->from('users')
+		$query = DB::select('user_name', 'password', 'token', 'created')->from('users')
 			->where('id', '=', $id)
 			->execute()
 			->as_array();

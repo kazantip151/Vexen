@@ -16,7 +16,7 @@ class View_Layout extends Kostache_Layout {
 
 	public function base_url()
 	{
-		return URL::base();
+		return Kohana::$base_url;
 	}
 
 	/**
@@ -50,14 +50,14 @@ class View_Layout extends Kostache_Layout {
 	 *
 	 * @return array
 	 */
-//	public function routes()
-//	{
-//		return array(
-//			'welcome_index'  => Route::url('default', array('controller' => 'welcome', 'action' => 'index')),
-////			'user_index' => Route::url('default', array('controller' => 'user')),
-////			'user_job'   => Route::url('default', array('controller' => 'jobs', 'action' => 'index')),
-////			'job_form'   => Route::url('default', array('controller' => 'jobs', 'action' => 'form')),
-//		);
-//	}
+	public function routes()
+	{
+		return array(
+			'home_index'        => Route::url('default', array('controller' => 'home')),
+			'user_registration' => Route::url('default', array('controller' => 'user', 'action' => 'registration')),
+//			'user_job'   => Route::url('default', array('controller' => 'jobs', 'action' => 'index')),
+//			'job_form'   => Route::url('default', array('controller' => 'jobs', 'action' => 'form')),
+		);
+	}
 
 } // End View_Layout
