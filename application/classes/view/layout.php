@@ -16,7 +16,7 @@ class View_Layout extends Kostache_Layout {
 
 	public function base_url()
 	{
-		return Kohana::$base_url;
+		return URL::base();
 	}
 
 	/**
