@@ -19,7 +19,7 @@ class Model_User extends ORM {
 	 * Insert user to the database
 	 *
 	 * @param  array  $values
-	 * @return int
+	 * @return int id
 	 */
 	public static function insert_user($values)
 	{
