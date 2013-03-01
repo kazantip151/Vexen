@@ -7,8 +7,15 @@
                         <h2 class="title">Регистрация</h2>
                         <div class="entry">
                             <form id="reg_form" action="{{base_url}}user/registration" method="POST">
-								<input type="text" name="user_name"/>
-								<input type="text" name="password"/>
+								<label>
+									Username
+									<input id="username" type="text" name="user_name"/>
+                                </label>
+                                <label>
+									Password
+									<input id="pass" type="password" name="password"/>
+                                </label>
+								<input type="submit" value="Submit"/>
                             </form>
                         </div>
                     </div>
