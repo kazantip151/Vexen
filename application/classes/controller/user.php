@@ -27,6 +27,7 @@ class Controller_User extends Controller_Site {
 				$post = arr::extract($this->request->post(), array('user_name', 'password', 'token', 'created'));
 				$post = arr::map('trim', $post);
 
+
 				// Save job
 				$user = $user->save();
 
