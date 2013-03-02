@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
-    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="{{base_url}}media/css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="{{base_url}}media/css/formalize.css" />
-    <link rel="stylesheet" type="text/css" href="{{base_url}}media/css/notices.css" />
-    <link rel="stylesheet" type="text/css" href="{{base_url}}media/css/style.css" />
-    <title>{{title}}</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{base_url}}media/css/notices.css" />
+	<link rel="stylesheet" type="text/css" href="{{base_url}}media/css/bootstrap-responsive.css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="{{base_url}}media/js/bootstrap.min.js"></script>
+	<script src="{{base_url}}media/js/notices.js"></script>
+	<title>{{title}}</title>
 </head>
 <body>
-<div id="wrapper">
+<div class="navbar navbar-inverse navbar-fixed-top">
 {{>header}}
-		{{>content}}
-	{{#show_profiler}}
-        <div id="profiler">
-            <hr />
-			{{{profiler}}}
-        </div>
-	{{/show_profiler}}
+	{{>content}}
+		{{#show_profiler}}
+			<div id="profiler">
+				<hr />
+				{{{profiler}}}
+			</div>
+		{{/show_profiler}}
 </div>
 {{>footer}}
 </body>
