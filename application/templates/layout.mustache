@@ -4,14 +4,14 @@
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="{{base_url}}media/css/notices.css" />
+    <link rel="stylesheet" type="text/css" href="{{base_url}}media/css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="{{base_url}}media/css/bootstrap-responsive.css" />
+	<link rel="stylesheet" type="text/css" href="{{base_url}}media/css/style.css" />
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="{{base_url}}media/js/bootstrap.min.js"></script>
-	<script src="{{base_url}}media/js/notices.js"></script>
 	<title>{{title}}</title>
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="container-fluid">
 {{>header}}
 	{{>content}}
 		{{#show_profiler}}
@@ -22,5 +22,7 @@
 		{{/show_profiler}}
 </div>
 {{>footer}}
+<script src="{{base_url}}media/js/bootstrap.min.js"></script>
+<script src="{{base_url}}media/js/notices.js"></script>
 </body>
 </html>

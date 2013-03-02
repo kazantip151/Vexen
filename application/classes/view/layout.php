@@ -2,6 +2,8 @@
 
 class View_Layout extends Kostache_Layout {
 
+	public $class_active = 'active';
+
 	public $show_profiler = FALSE;
 	public function profiler()
 	{

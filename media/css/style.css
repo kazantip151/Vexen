@@ -1,0 +1,22 @@
+/*global class*/
+/*Removing border size*/
+.padding-box {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;      /* Firefox */
+	-webkit-box-sizing: border-box;   /* Safari */
+	background-clip: padding-box;
+	-moz-background-clip: padding;    /* Firefox */
+	-webkit-background-clip: padding; /* Safari */
+}
+/*Image replacement*/
+.ir {
+	display: block; border: 0; text-indent: -999em; overflow: hidden; text-align: left;
+	direction: ltr; background-color: transparent; background-repeat: no-repeat
+}
+/*Remove(hide) elements*/
+.hidden { display: none !important; visibility: hidden }
+/*Hide elements*/
+.invisible { visibility: hidden; }
+
+/***********************************************************************/
+.home { background: url("../img/Keyamoon_icons/16px/home.png") no-repeat 50% 50% }

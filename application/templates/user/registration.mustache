@@ -1,27 +1,12 @@
-<div id="page">
-    <div id="page-bgtop">
-        <div id="page-bgbtm">
-            <div id="page-content">
-                <div id="content">
-                    <div class="post">
-                        <h2 class="title">Регистрация</h2>
-                        <div class="entry">
-                            <form id="reg_form" action="{{base_url}}user/registration" method="POST">
-								<label>
-									Username
-									<input id="username" type="text" name="user_name"/>
-                                </label>
-                                <label>
-									Password
-									<input id="pass" type="password" name="password"/>
-                                </label>
-								<input type="submit" value="Submit"/>
-                            </form>
-                        </div>
-                    </div>
-                    <div style="clear: both;">&nbsp;</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<h2>Регистрация</h2>
+<form id="reg_form" action="{{base_url}}user/registration" method="POST">
+	<label>
+		Username
+		<input id="username" type="text" name="user_name"/>
+	</label>
+	<label>
+		Password
+		<input id="pass" type="password" name="password"/>
+	</label>
+	<input class="btn btn-primary" type="submit" value="Submit"/>
+</form>
