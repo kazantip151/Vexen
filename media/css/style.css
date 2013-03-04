@@ -20,3 +20,7 @@
 
 /***********************************************************************/
 .home { background: url("../img/Keyamoon_icons/16px/home.png") no-repeat 50% 50% }
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
